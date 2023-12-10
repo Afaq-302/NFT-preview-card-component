@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .background-image {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background-image: url("images/pic.JPG");
+        background-size: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      .card-bg{
+        content: url("images/image-equilibrium.jpg");
+        border-radius: 10px;
+        background-size: cover;
+      }
+      .card-bg:hover{
+        content: url("images/icon-view.svg");
+        border-radius: 10px;
+        background-color: cyan;
+        background-size:cover;
+      }
+
+
+    </style>
+  </head>
+  <body
+    class="bg-[#0d192b] flex justify-center items-center h-[100vh] text-white font-['Outfit',_sans-serif]"
+  >
+    <main>
+      <div
+        class="card max-w-[19rem] bg-[#14253d] flex flex-col gap-[0.8rem] px-6 py-4 rounded-lg shadow-2xl"
+      >
+        <img
+          src="images/image-equilibrium.jpg"
+          class="rounded-lg shadow-xl "
+          alt=""
+        />
+        <!-- <a href="#" class="card-bg"></a> -->
+
+        <h2
+          class="text-md font-semibold text-white cursor-pointer hover:text-[#00fff7]"
+        >
+          Equilibrium #3429
+        </h2>
+        <p class="text-[#8bacda] text-[0.9rem] text-[#8bacda]">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div
+          class="flex justify-between items-center pb-[14px] border-b-[1px] border-[#ffffff40]"
+        >
+          <a class="text-[#00fff7]">
+            <img
+              src="images/icon-ethereum.svg"
+              class="inline w-[12px] mr-1 mb-[3px]"
+              alt=""
+            />
+            0.041 ETH</a
+          >
+          <a class="text-[#8bacda]">
+            <img
+              src="images/icon-clock.svg"
+              class="inline w-[16px] mr-1 mb-[3px]"
+              alt=""
+            />3 days left</a
+          >
+        </div>
+
+        <div class="flex flex-row items-center gap-[1rem]">
+          <!-- <img
+            src="images/pic.JPG"
+            class="w-[42px] rounded-[50%] border-2 border-white"
+            alt=""
+          /> -->
+
+          <a href="#" class="background-image"></a>
+
+          <span class="leading-6">
+            <span class="text-[#8bacda]"> Creation of </span>
+            Afaq
+          </span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
