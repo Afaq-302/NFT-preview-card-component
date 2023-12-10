@@ -30,19 +30,6 @@
         border: 2px solid white;
       }
 
-      .card-bg{
-        content: url("images/image-equilibrium.jpg");
-        border-radius: 10px;
-        background-size: cover;
-      }
-      .card-bg:hover{
-        content: url("images/icon-view.svg");
-        border-radius: 10px;
-        background-color: cyan;
-        background-size:cover;
-      }
-
-
     </style>
   </head>
   <body
@@ -52,12 +39,14 @@
       <div
         class="card max-w-[19rem] bg-[#14253d] flex flex-col gap-[0.8rem] px-6 py-4 rounded-lg shadow-2xl"
       >
-        <img
+        <!-- <img
           src="images/image-equilibrium.jpg"
           class="rounded-lg shadow-xl "
           alt=""
-        />
-        <!-- <a href="#" class="card-bg"></a> -->
+        /> -->
+        <div
+          class="bg-[url('images/image-equilibrium.jpg')] w-[16rem] h-[16rem] bg-cover bg-center cursor-pointer hover:bg-[url('images/icon-view.svg')] hover:bg-[#00fff8]"
+        ></div>
 
         <h2
           class="text-md font-semibold text-white cursor-pointer hover:text-[#00fff7]"
